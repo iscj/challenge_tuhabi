@@ -1,0 +1,11 @@
+{
+	"filter_year": {
+		"year":"2011"
+	},
+	"filter_city": {
+		"city": "medellin"
+	},
+	"filter_status": {
+		"status": "en_venta"
+	}
+}
