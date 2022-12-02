@@ -1,13 +1,12 @@
-from fastapi import FastAPI
+from http.server import HTTPServer 
 
-from app.services import property_services
+from app.services.property_services import PropertyHandler
 
+server = HTTPServer(('127.0.0.1',8080), PropertyHandler)
 
-def get_application():
-    _app = FastAPI()
-    _app.include_router(property_services.router)
-
-    return _app
-
-
-app = get_application()
+try:
+	print('Starting server, use <Ctrl-C> to stop')
+	server.serve_forever()
+except KeyboardInterrupt:
+	pass
+server.server_close()
