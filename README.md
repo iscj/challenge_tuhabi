@@ -3,7 +3,6 @@ El proyecto se desarrolla como una arquitectura de microservicios, esto con el f
 Las herramientas utilizadas son:
 ```
 mysql-connector-python==8.0.31
-fastapi==0.88.0
 python-dotenv==0.21.0
 uvicorn==0.20.0
 ```
